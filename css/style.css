@@ -1,0 +1,181 @@
+@import url("https://fonts.googleapis.com/css2?family=Bree+Serif&family=PT+Sans+Caption:wght@400;700&family=Pacifico&family=Righteous&family=Saira+Condensed:wght@300;400;500;600;700;800&display=swap");
+/* defauls css */
+html {
+  font-size: 62.5%;
+  box-sizing: border-box;
+}
+*,
+*::after,
+*::before {
+  padding: 0;
+  margin: 0;
+  box-sizing: inherit;
+}
+body {
+  font-family: "PT Sans Caption", sans-serif;
+  font-size: 1.6rem;
+  font-weight: 400;
+}
+::selection {
+  background-color: #fec260;
+  color: #352e28;
+}
+h1 {
+  font-family: "Pacifico", cursive;
+  font-size: 5rem;
+  color: #352e28;
+  padding: 0.8rem 0;
+  margin-bottom: 0.8rem;
+  z-index: 10;
+  position: relative;
+}
+/* isolation: isolate; */
+h1::after {
+  content: "";
+  width: 100%;
+  height: 25%;
+  position: absolute;
+  left: 0;
+  bottom: 1rem;
+  background-color: #fec260;
+  z-index: -1;
+  transition: all 0.4s;
+}
+h1:hover::after {
+  height: 50%;
+}
+.bookmark {
+  padding: 4.8rem 0;
+  background-color: #f7ecde;
+}
+.bookmarker__body {
+  padding: 2.4rem 1.6rem;
+  margin-top: 4.8rem;
+  border-bottom: 2px dotted #352e28;
+  border-top: 2px dotted #352e28;
+}
+.bookmarker__body h2 {
+  font-family: "Righteous", cursive;
+  font-size: 2.5rem;
+  background-image: linear-gradient(to right, #3ca55c, #b5ac49);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+}
+.group-input input {
+  font-size: 1.6rem;
+  border: 2px solid transparent;
+}
+.form-control:focus {
+  outline: 0;
+  border-color: #d99c39;
+  color: #212529;
+  box-shadow: 0 0 0 0.25rem #fec26055;
+}
+.main-btn {
+  color: #fff;
+  background-color: #d1512d;
+  padding: 0.7rem 4.9rem;
+  font-size: 1.6rem;
+  transition: all 0.5s;
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  -ms-transition: all 0.5s;
+  -o-transition: all 0.5s;
+}
+.main-btn:hover {
+  background-color: #a03315;
+  color: #fff;
+}
+/* popup */
+.popup {
+  background-color: rgb(0 0 0 / 0.4);
+  backdrop-filter: blur(10px);
+  z-index: 2220;
+}
+.popup .popup_box {
+  background-color: #fff;
+  padding: 2.4rem;
+  width: 50rem;
+}
+.popup .popup_box header {
+  margin-bottom: 2.4rem;
+}
+.popup_box .circle > * {
+  height: 2rem;
+  width: 2rem;
+}
+
+.popup_box .circle > span:first-child {
+  background-color: #f15f5d;
+}
+.popup_box .circle > span:nth-child(2) {
+  background-color: #febe2e;
+}
+.popup_box .circle > span:last-child {
+  background-color: #4db748;
+}
+.close-icon i {
+  display: block;
+  font-size: 3rem;
+}
+.popup_box p {
+  font-family: "Bree Serif", serif;
+  font-size: 21px;
+  line-height: 1.3;
+  color: #352e28;
+  margin-bottom: 0.5rem;
+}
+.rules li {
+  font-size: 1.8rem;
+  padding-top: 1rem;
+}
+.rules li i {
+  color: #bb4120;
+}
+/* btn style */
+.btn {
+  font-size: 1.6rem;
+}
+table {
+  vertical-align: middle !important;
+}
+.btn-visit {
+  padding: 0.6rem 1.2rem;
+  color: #fff;
+  background-color: #9eb23b;
+  border-color: #9eb23b;
+  transition: all 0.4s;
+  -webkit-transition: all 0.4s;
+  -moz-transition: all 0.4s;
+  -ms-transition: all 0.4s;
+  -o-transition: all 0.4s;
+}
+.btn-visit:hover {
+  background-color: #8a9e23;
+  border-color: #6e8018;
+  color: #fff;
+}
+.btn-visit:active,
+.btn-delete:active {
+  color: #000;
+  background-color: transparent;
+  border-color: #000;
+}
+.btn-delete {
+  padding: 0.6rem 1.2rem;
+  color: #fff;
+  background-color: #eb1d36;
+  border-color: #eb1d36;
+  transition: all 0.4s;
+  -webkit-transition: all 0.4s;
+  -moz-transition: all 0.4s;
+  -ms-transition: all 0.4s;
+  -o-transition: all 0.4s;
+}
+.btn-delete:hover {
+  background-color: #d30820;
+  border-color: #ba081d;
+  color: #fff;
+}
+/* eng ahmed */

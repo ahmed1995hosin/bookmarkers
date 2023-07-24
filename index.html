@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bookmarker</title>
+    <link
+      rel="shortcut icon"
+      href="icons8-bookmark-16.png"
+      type="image/x-icon"
+    />
+    <!-- bootstrap css file  -->
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <!-- main css file  -->
+    <link rel="stylesheet" href="css/style.css" />
+    <!-- font awesome files  -->
+    <link rel="stylesheet" href="css/all.min.css" />
+  </head>
+  <body>
+    <!-- ahmed hosin -->
+    <!-- bookmarker start -->
+    <main class="bookmark min-vh-100">
+      <div class="container d-flex flex-column align-items-center">
+        <h1 class="position-relative">Bookmarker</h1>
+        <section
+          class="bookmarker__body w-100 d-flex flex-column align-items-center gap-5"
+        >
+          <h2>
+            <i class="fa-solid fa-bookmark"></i>
+            Bookmark your favorite sites
+            <i class="fa-solid fa-bookmark"></i>
+          </h2>
+          <div class="group-input w-100">
+            <label class="fw-semibold pb-3" for="bookmarkName">
+              <i class="fa-solid fa-bookmark pe-2"></i>
+              Site Name
+            </label>
+            <input
+              type="text"
+              class="form-control position-relative"
+              placeholder="Bookmark Name"
+              id="bookmarkName"
+            />
+          </div>
+          <div class="group-input w-100">
+            <label class="fw-semibold pb-3" for="bookmarkUrl">
+              <i class="fa-solid fa-link pe-2"></i>
+              Site URL
+            </label>
+            <input
+              type="text"
+              class="form-control position-relative"
+              placeholder="Website URL"
+              id="bookmarkUrl"
+            />
+          </div>
+          <button
+            type="button"
+            class="btn main-btn text-capitalize"
+            id="mainBtn"
+          >
+            submit
+          </button>
+        </section>
+        <table class="table bg-light mt-5 text-center">
+          <thead>
+            <tr>
+              <th class="text-capitalize fw-semibold">index</th>
+              <th class="text-capitalize fw-semibold">Website Name</th>
+              <th class="text-capitalize fw-semibold">Visit</th>
+              <th class="text-capitalize fw-semibold">Delete</th>
+            </tr>
+          </thead>
+          <tbody id="tableContent"></tbody>
+        </table>
+      </div>
+      <!-- popup window  -->
+      <div
+        class="popup position-fixed top-0 start-0 end-0 bottom-0 d-flex d-none justify-content-center align-items-center"
+      >
+        <div class="popup_box rounded-3">
+          <header class="d-flex justify-content-between align-items-center">
+            <div class="circle d-flex">
+              <span class="rounded-circle me-2"></span>
+              <span class="rounded-circle me-2"></span>
+              <span class="rounded-circle me-2"></span>
+            </div>
+            <button class="close-icon btn border-0" id="closeBtn">
+              <i class="fa-solid fa-xmark"></i>
+            </button>
+          </header>
+          <p>Site Name or Url is not valid, Please follow the rules below :</p>
+          <ol class="list-unstyled rules">
+            <li>
+              <i class="fa-regular fa-circle-right p-2"></i>
+              Site name must contain at least 3 characters
+            </li>
+            <li>
+              <i class="fa-regular fa-circle-right p-2"></i>
+              Site URL must be a valid one
+            </li>
+          </ol>
+        </div>
+      </div>
+    </main>
+    <!-- popup window  -->
+
+    <script src="js/main.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>
